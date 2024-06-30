@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Target Shooting Game</title>
+<title>crush</title>
 <style>
     body {
         margin: 0;
@@ -37,7 +37,6 @@
 
     #target {
         position: absolute;
-        left: 200px;
         background-color: rgb(0, 89, 255);
         border: none;
         width: 80px;
@@ -49,7 +48,7 @@
         color: white;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         #yes {
             width: 70px;
             font-size: 18px;
@@ -88,7 +87,7 @@
             target.style.top = randomY + 'px';
         }
 
-        target.addEventListener('mouseenter', function() {
+        target.addEventListener('click', function() {
             moveTarget();
         });
 
